@@ -56,11 +56,10 @@ class WhatsApp:
 
     chrome_options = Options()
     #chrome_options.add_argument("user-data-dir=/tmp/selenium") 
-    #chrome_options.add_argument("executable_path=/home/alia/.wdm/chromedriver/2.45/linux64/chromedriver") 
 #    chrome_options.add_experimental_option("debugger_address","127.0.0.1:9014")
     chrome_options.add_argument("--disable-popup-blocking")
-
-    browser = webdriver.Chrome(executable_path="C:\\Users\\jannatul\\Documents\\foodah.my\\foodah.my\\chromedriver_win32\\chromedriver.exe", chrome_options=chrome_options)  # we are using chrome as our webbrowser
+    browser = webdriver.Chrome(executable_path="chromedriver.exe", chrome_options=chrome_options)  # we are using chrome as our webbrowser
+    browser = webdriver.Chrome( chrome_options=chrome_options)  # we are using chrome as our webbrowser
    # browser.get("web.whatsapp.com")
     #browser = webdriver.Remote(command_executor="http://localhost:9014", desired_capabilities={})
     #browser.session_id = "74ab8a5fc83294611afb24a16ad69b44"
