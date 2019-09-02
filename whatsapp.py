@@ -70,8 +70,8 @@ class WhatsApp:
         # emoji.json is a json file which contains all the emojis
         with open("emoji.json") as emojies:
             self.emoji = json.load(emojies)  # This will load the emojies present in the json file into the dict
-        WebDriverWait(self.browser,wait).until(EC.presence_of_element_located(
-            (By.CSS_SELECTOR, '.jN-F5')))
+        #WebDriverWait(self.browser,wait).until(EC.presence_of_element_located(
+         #   (By.CSS_SELECTOR, '.jN-F5')))
         if screenshot is not None:
             self.browser.save_screenshot(screenshot)  # This will save the screenshot to the specified file location
 
